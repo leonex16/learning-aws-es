@@ -28,7 +28,7 @@ jobs:
         with:
           access_token: ${{ github.token }}
 
-  deploy:
+  install_dependencies:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,6 +37,10 @@ jobs:
     - name: Install MdBook
       run: cargo install mdbook
 
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Build
       run: mdbook build -d docs
 
