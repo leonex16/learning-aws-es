@@ -38,6 +38,9 @@ jobs:
       run: cargo install mdbook
 
   deploy:
+    needs:
+      - install_dependencies
+
     runs-on: ubuntu-latest
 
     steps:
