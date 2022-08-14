@@ -37,16 +37,10 @@ jobs:
     - name: Install MdBook
       run: cargo install mdbook
 
-  deploy:
-    needs:
-      - install_dependencies
-
-    runs-on: ubuntu-latest
-
-    steps:
     - name: Build
       run: mdbook build -d docs
 
+    # Use AWS_S3_BUCKET AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_REGION SOURCE_DIR
     - uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete
