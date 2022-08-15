@@ -1,9 +1,9 @@
 name: CI CD
 
 on:
-  push:
+  pull_request:
     branches:
-      - main
+    - main
 
 env:
   CARGO_TERM_COLOR: always
@@ -14,11 +14,17 @@ env:
 
 jobs:
 
-  # should_deploy:
-  #   runs-on: ubuntu-latest
-  #   if: "contains( github.event.head_commit.message, '[deploy]')"
+  should_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - if: "startsWith( github.event.head_commit.message, '[deploy]') == false"
+        run: exit 0
 
   avoid_duplicate_workflow:
+    needs:
+      - should_deploy
+
     runs-on: ubuntu-latest
 
     steps:
@@ -28,6 +34,9 @@ jobs:
           access_token: ${{ github.token }}
 
   deploy:
+    needs:
+      - should_deploy
+
     runs-on: ubuntu-latest
 
     steps:
