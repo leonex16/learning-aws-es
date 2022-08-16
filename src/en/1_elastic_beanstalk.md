@@ -39,7 +39,7 @@ EBS is powered by a CloudFormation template setups for you:
 - Java ➡️ Spring
 - NodeJs ➡️ Express
 
-## Web ws Worker Environment
+## Web vs Worker Environment
 
 When you first create a Elastic Beanstalk applications,
 you have to choose an environment and you are choosing
@@ -59,7 +59,7 @@ going to be interconnected together.
   - Still uses an ASG but desired capacity set to 1 to ensure
   server is always running
   - No ELB to save on cost
-  - Public IP address has to be used to  route traffic to server
+  - Public IP address has to be used to route traffic to server
 - Load Balanced Env
   - Uses ASG and set to scale
   - Uses an ELB
@@ -81,7 +81,7 @@ There are the deployment policies available with Elastic Beanstalk
 1. Deploys the new app version to all instances at the same time
 2. Takes all instances **out of service**
 while the deployment processes
-3. Servers become available againt
+3. Servers become available again
 
 The <span class="text-green">**fastest**</span> method but
 also the most <span class="text-red">**dangerous**</span>
@@ -155,16 +155,16 @@ and the context can change the scope of what they mean
 
 ### Possible Definitions of In-Place
 
-- Scope of Elastic Beanstalk Env
+- **Scope of Elastic Beanstalk Env**
   - All the deployment policies provided by EB could be
   considered In-Place since they are within the scope of a
   single EB environment
   - All at once, Rolling, Rolling and additional batch, and Immutable
-- Scope of the same server ( not replacing the server )
+- **Scope of the same server ( not replacing the server )**
   - Deployment policies which do not involve the server
   being replaced
-  - All at once and Rolling
-- Scope of an uninterrupted server
+  - All at once, Rolling, and Rolling and additional batch
+- **Scope of an uninterrupted server**
   - Traffic is never routed away from
   the server ( taken-of-service ). Implements Zero-downtime
   deploys where Blue/Green occurs on the server
@@ -188,7 +188,7 @@ with loss of all their resources*
 
 ## Configuration Files
 
-Eb environments can be customized using configuration files
+EB environments can be customized using configuration files
 
 - **.ebextensions** is a hidden folder called at the root
 of your project which contains the config files
@@ -297,7 +297,7 @@ used with Single-Instance Web Environments
 - In-Place deployment is when deployment occurs within
 the environment, all deployment policies are In-Place
 - Blue/Green is when deployment swaps environments ( outside
-an environments ), When you have external resources such as
+an environments ). When you have external resources such as
 RDS which cannot be destroyed its suited for Blue/Green
 - **.ebextensions** is a folder which contains all
 configuration files
