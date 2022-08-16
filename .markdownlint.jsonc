@@ -1,0 +1,10 @@
+{
+	"MD033": false, // no-inline-html
+	"MD024": { // no-duplicate-heading/no-duplicate-header
+		"siblings_only": true
+	},
+	"MD013": { // line-length
+		"line_length": 60,
+		"tables": false
+	}
+}
