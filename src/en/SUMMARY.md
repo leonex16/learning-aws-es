@@ -1,7 +1,7 @@
 # Summary
 
 - [Introducción](./index.md)
-- [Elastic Beanstalk](./1_elastic_beanstalk.md)
+- [Elastic Beanstalk](./001_elastic_beanstalk.md)
 - [ECS + Fargate]()
 - [X-Ray]()
 - [ACM]()
