@@ -113,9 +113,9 @@ to roll back the changes
 3. Attach the new batch and terminate the existing batch
 
 Rolling with additional batch's ensure our capacity
-is never reduced. <span class="text-red">This is important
+is never reduced. <span class="text-red">**This is important
 for applications were a reduction in capacity could cause
-availability issues for users</span>
+availability issues for users**</span>
 
 #### In Case of Failure
 
@@ -124,7 +124,7 @@ to roll back the changes
 
 ### Immutable
 
-1. Create a new ASG group awith EC2 instances
+1. Create a new ASG group with EC2 instances
 2. Deploy the updated version of the app on the new EC2 instances
 3. Point the ELB to the new ASG and delete the old ASG which
 will terminate the old EC2 instance
@@ -175,10 +175,10 @@ and the context can change the scope of what they mean
 
 <div style="display: flex; gap: 16px;">
   <img
-    src="https://i.postimg.cc/jSw-qynQg/image.png"
+    src="../../public/images/elastic_beanstalk/no-blue-green-deploy.png"
     alt="Immutable ( In-Place )" />
   <img
-    src="https://i.postimg.cc/HWhfXZZm/image.png"
+    src="../../public/images/elastic_beanstalk/blue-green-deploy.png"
     alt="Immutable ( In-Place )" />
 </div>
 
@@ -213,7 +213,7 @@ with a "+" symbol at the end. E.g. exapro-prod+*
 ## Linux Server Configuration
 
 <img
-src="https://i.postimg.cc/vTSNGBKk/image.png"
+src="../../public/images/elastic_beanstalk/linux-server-configuration.png"
 alt="Linux Server Configuration" style="width: 100%;" />
 
 ## EB CLI
@@ -237,7 +237,7 @@ is not included in the standard AMIs.
 ### Steps to Use a Custom Image
 
 <img
-  src="https://i.postimg.cc/7Lw154SL/image.png"
+  src="../../public/images/elastic_beanstalk/steps-to-custom-image.png"
   alt="Steps to Use a Custom Image" style="width: 100%;" />
 
 ## Configuration RDS
