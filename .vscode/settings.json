@@ -1,0 +1,23 @@
+{
+	"cSpell.words": [
+		"amzn",
+		"awsx",
+		"desencriptado",
+		"dockerized",
+		"dockerrun",
+		"ebextensions",
+		"encriptiación",
+		"fargate",
+		"interconectarlos",
+		"laravel",
+		"monitorear",
+		"monitoreo",
+		"paas"
+	],
+	"cSpell.enabled": true,
+	"cSpell.caseSensitive": false,
+	"cSpell.language": "en,es",
+	"cSpell.ignorePaths": [
+		"*.yaml"
+	]
+}
