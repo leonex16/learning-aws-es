@@ -175,10 +175,10 @@ and the context can change the scope of what they mean
 
 <div style="display: flex; gap: 16px;">
   <img
-    src="../../public/images/elastic_beanstalk/no-blue-green-deploy.png"
+    src="../../public/images/elastic_beanstalk/no_blue_green_deploy.png"
     alt="Immutable ( In-Place )" />
   <img
-    src="../../public/images/elastic_beanstalk/blue-green-deploy.png"
+    src="../../public/images/elastic_beanstalk/blue_green_deploy.png"
     alt="Immutable ( In-Place )" />
 </div>
 
@@ -213,7 +213,7 @@ with a "+" symbol at the end. E.g. exapro-prod+*
 ## Linux Server Configuration
 
 <img
-src="../../public/images/elastic_beanstalk/linux-server-configuration.png"
+src="../../public/images/elastic_beanstalk/linux_server_configuration.png"
 alt="Linux Server Configuration" style="width: 100%;" />
 
 ## EB CLI
@@ -237,7 +237,7 @@ is not included in the standard AMIs.
 ### Steps to Use a Custom Image
 
 <img
-  src="../../public/images/elastic_beanstalk/steps-to-custom-image.png"
+  src="../../public/images/elastic_beanstalk/steps_to_custom_image.png"
   alt="Steps to Use a Custom Image" style="width: 100%;" />
 
 ## Configuration RDS

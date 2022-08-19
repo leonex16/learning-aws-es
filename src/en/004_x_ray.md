@@ -79,7 +79,7 @@ app.use(AWSXRay.express.closeSegment());
 
 <div style="display: flex; gap: 1rem">
   <img
-    src="../../public/images/x_ray/daemon-works.png"
+    src="../../public/images/x_ray/daemon_works.png"
     alt="Daemon Works"
     style="order: 2; width: 50%;" />
   <div style="order: 1;">
@@ -111,7 +111,7 @@ provides a visual representation of your app
 ### Service Graph
 
 <img
-  src="../../public/images/x_ray/service-graph.png"
+  src="../../public/images/x_ray/service_graph.png"
   alt="Service Graph" />
 
 ### Segments
@@ -188,13 +188,13 @@ The sampling decision and trace ID are added to HTTP request
 in **tracing headers** named **X-Amzn-Trace-Id**
 
 <img
-  src="../../public/images/x_ray/trace-header.png"
+  src="../../public/images/x_ray/trace_header.png"
   alt="Trace Header" />
 
 ### Filter Expressions
 
 <img
-  src="../../public/images/x_ray/filter-expressions.png"
+  src="../../public/images/x_ray/filter_expressions.png"
   alt="Filter Expressions" />
 
 ### Groups

@@ -16,11 +16,15 @@ of EC2 instances to run containers
 the second
 - You pay based on duration and consumption
 
-![ECS vs Fargate](https://i.postimg.cc/65VJ8377/image.png)
+<img
+  src="../../public/images/fargate/ecs_vs_fargate.png"
+  alt="ECS vs Fargate" />
 
 ## Configuring Fargate Tasks
 
-![Configuring Fargate Tasks](https://i.postimg.cc/kgpVB9hb/image.png)
+<img
+  src="../../public/images/fargate/configuring_fargate_tasks.png"
+  alt="Configuring Fargate Tasks" />
 
 ## Fargate vs Lambda
 
