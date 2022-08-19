@@ -185,10 +185,10 @@ es el contexto que puede cambiar el alcance de lo que significan
 
 <div style="display: flex; gap: 16px;">
   <img
-    src="https://i.postimg.cc/jSw-qynQg/image.png"
+    src="../../public/images/elastic_beanstalk/no_blue_green_deploy.png"
     alt="Immutable ( In-Place )" />
   <img
-    src="https://i.postimg.cc/HWhfXZZm/image.png"
+    src="../../public/images/elastic_beanstalk/blue_green_deploy.png"
     alt="Immutable ( In-Place )" />
 </div>
 
@@ -224,8 +224,8 @@ con un símbolo "+" al final. P.ej. exapro-prod+*
 ## Configuración en servidor Linux
 
 <img
-src="https://i.postimg.cc/vTSNGBKk/image.png"
-alt="Configuración del servidor Linux" style="ancho: 100%;" />
+src="../../public/images/elastic_beanstalk/linux_server_configuration.png"
+alt="Linux Server Configuration" style="width: 100%;" />
 
 ## CLI de EB
 
@@ -250,9 +250,8 @@ no está incluido en las AMI estándar.
 ### Pasos para Usar una Imagen Personalizada
 
 <img
-  src="https://i.postimg.cc/7Lw154SL/image.png"
-  alt="Pasos para Usar una Imagen Personalizada"
-  style="width: 100%;" />
+  src="../../public/images/elastic_beanstalk/steps_to_custom_image.png"
+  alt="Steps to Use a Custom Image" style="width: 100%;" />
 
 ## Configuración RDS
 

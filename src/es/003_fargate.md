@@ -15,11 +15,15 @@ clusters de instancias EC2 para ejecutar contenedores
 - Se cobra por lo menos un minuto y después por segundo
 - Se pagas en base a la duración y el consumo
 
-![ECS vs Fargate](https://i.postimg.cc/65VJ8377/image.png)
+<img
+  src="../../public/images/fargate/ecs_vs_fargate.png"
+  alt="ECS vs Fargate" />
 
 ## Configurando Fargate Tasks
 
-![Configuring Fargate Tasks](https://i.postimg.cc/kgpVB9hb/image.png)
+<img
+  src="../../public/images/fargate/configuring_fargate_tasks.png"
+  alt="Configuring Fargate Tasks" />
 
 ## Fargate Vs Lambda
 

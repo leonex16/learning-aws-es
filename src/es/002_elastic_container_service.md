@@ -50,30 +50,30 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 1rem">
 <img
-  src="https://i.postimg.cc/qMJs0Vnx/image.png"
-  alt="Step 2" />
+  src="../../public/images/elastic_container_service/spots_or_on_demand.png"
+  alt="Spots or On Demand" />
 <img
-  src="https://i.postimg.cc/8cP78G3F/image.png"
-  alt="Steps 3, 4, 6" />
+  src="../../public/images/elastic_container_service/ec2_setup.png"
+  alt="EC2 Setup" />
 <img
-  src="https://i.postimg.cc/4N0m0r1d/image.png"
-  alt="Step 5" />
+  src="../../public/images/elastic_container_service/vpc_setup.png"
+  alt="VPC Setup" />
 <img
-  src="https://i.postimg.cc/rp1sKz20/image.png"
-  alt="Step 7" />
+  src="../../public/images/elastic_container_service/assign_an_iam_role.png"
+  alt="Assign an IAM Role" />
 <img
-  src="https://i.postimg.cc/rsmwnJ0x/image.png"
-  alt="Step 8" />
+  src="../../public/images/elastic_container_service/use_cloudwatch.png"
+  alt="Use CloudWatch" />
 <img
-  src="https://i.postimg.cc/0NPxXfhj/image.png"
-  alt="Step 9" />
+  src="../../public/images/elastic_container_service/use_key_pair.png"
+  alt="Use Key Pair" />
 </div>
 
 ## Task Definition File
 
 <div style="display: flex; gap: 1rem">
   <img
-    src="https://i.postimg.cc/28RgHV8T/image.png"
+    src="../../public/images/elastic_container_service/task_definition_file.png"
     alt="Task Definition File"
     style="order: 2; width: 50%;" />
   <div style="order: 1;">
@@ -100,7 +100,7 @@ Servicio totalmente gestionado que hace fácil
 **guardar**, **administrar** y **desplegar** imágenes Docker
 
 <img
-  src="https://i.postimg.cc/NMChdcjt/image.png"
+  src="../../public/images/elastic_container_service/flow_ecr.png"
   alt="Flow ECR" />
 
 <style>
