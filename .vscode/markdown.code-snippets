@@ -1,0 +1,18 @@
+{
+  "Create span with text-red class": {
+    "prefix": ".red",
+    "body": [
+      "<span class=\"text-red\">**${1:text}**</span>"
+    ],
+    "description": "Create span with text-red class"
+  },
+  "Image Element": {
+    "prefix": ".ima",
+    "body": [
+      "<img",
+      "  src=\"../../${1:relative-path}\"",
+      "  alt=\"${2:alternative-text}\" />"
+    ],
+    "description": "Image Element"
+  }
+}
