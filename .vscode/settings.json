@@ -22,10 +22,12 @@
 		"Geolocation",
 		"Godaddy",
 		"interconectarlos",
+		"JWTs",
 		"laravel",
 		"Minecraft",
 		"monitorear",
 		"monitoreo",
+		"OIDC",
 		"paas"
 	],
 	"cSpell.enabled": true,
