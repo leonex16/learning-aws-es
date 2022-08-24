@@ -1,11 +1,14 @@
 {
 	"cSpell.words": [
+		"Alexa",
 		"amzn",
 		"awsx",
+		"cyphertext",
 		"desencriptado",
 		"dockerized",
 		"dockerrun",
 		"ebextensions",
+		"encriptación",
 		"encriptiación",
 		"Enruta",
 		"enrutamiento",
@@ -14,6 +17,7 @@
 		"escalabilidad",
 		"exampro",
 		"fargate",
+		"FIPS",
 		"geolocation",
 		"Geolocation",
 		"Godaddy",
