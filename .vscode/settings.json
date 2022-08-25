@@ -20,6 +20,7 @@
 		"FIPS",
 		"geolocation",
 		"Geolocation",
+		"Geospatial",
 		"Godaddy",
 		"interconectarlos",
 		"JWTs",
@@ -27,8 +28,11 @@
 		"Minecraft",
 		"monitorear",
 		"monitoreo",
+		"MPNS",
+		"Nats",
 		"OIDC",
-		"paas"
+		"paas",
+		"Sidekiq"
 	],
 	"cSpell.enabled": true,
 	"cSpell.caseSensitive": false,
