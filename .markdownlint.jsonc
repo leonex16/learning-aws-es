@@ -5,6 +5,7 @@
 	},
 	"MD013": { // line-length
 		"line_length": 60,
-		"tables": false
+		"tables": false,
+		"code_blocks": false
 	}
 }
