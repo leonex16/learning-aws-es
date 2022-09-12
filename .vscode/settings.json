@@ -33,6 +33,7 @@
     "geolocation",
     "Geolocation",
     "Geospatial",
+    "getattr",
     "Godaddy",
     "interconectarlos",
     "Jumpbox",
@@ -64,7 +65,10 @@
     "solation",
     "srcaddr",
     "srcport",
+    "templating",
     "tomicity",
+    "transpilador",
+    "transpiladores",
     "urability",
     "vulcan",
     "xlarge"
