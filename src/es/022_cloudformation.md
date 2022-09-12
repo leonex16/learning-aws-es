@@ -6,7 +6,7 @@ recursos mediante código
 
 ## Introducción
 
-### ¿Qué es la infraestructura como código? ( IaC )
+### What is Infrastructure As Code? ( IaC )
 
 El proceso de gestión y aprovisionamiento de centros de datos
 informáticos ( eg, AWS ) a través de archivos de definición
@@ -15,7 +15,7 @@ en lugar de archivos de configuración de hardware físico
 o herramientas de configuración interactivas
 ( ¡deja de hacer la configuración manual! )
 
-### Caso de uso
+### Use Case
 
 La gente paga una suscripción mensual y para ejecutar un
 servidor de Minecraft. Ellos eligen **donde** quieren y
@@ -26,7 +26,7 @@ una nuevo stack de CloudFormation.
 Hacemos que un lambda les envíe el correo electrónico
 de su nueva dirección IP del servidor Minecraft y los detalles
 
-## Formatos de plantillas
+## Template Formats
 
 CloudFormation puede ser escrito en dos formatos diferentes
 
@@ -42,17 +42,17 @@ CloudFormation puede ser escrito en dos formatos diferentes
   src="../../public/images/cloudformation/yaml_format.png"
   alt="Formato YAML" />
 
-## Plantilla Anatomía
+## Template Anatomy
 
-### MetaDatos
+### MetaData
 
 Información adicional sobre la plantilla
 
-### Descripción
+### Description
 
 Una descripción de lo que se supone que hace esta plantilla
 
-### Parámetros
+### Parameters
 
 Valores a pasar a la plantilla en tiempo de ejecución
 
@@ -61,16 +61,16 @@ Valores a pasar a la plantilla en tiempo de ejecución
 Una tabla de búsqueda. Mapea las claves a los valores para
 que usted cambie sus valores a otra cosa
 
-### Condiciones
+### Conditions
 
 Si se crean recursos o se asignan propiedades
 
-### Transformación
+### Transform
 
 Aplica macros ( como aplicar un mod que cambie la
 anatomía para que sea personalizada )
 
-### Recursos
+### Resources
 
 Un recurso que quieres crear, por ejemplo, un rol de IAM,
 una instancia de EC2, Lambda, RDS
@@ -83,7 +83,7 @@ CloudFormation Templates **requiere** que
 Valores que devuelve eg. Una dirección ip del nuevo
 servidor creado
 
-## Actualizaciones de el stack
+## Stack Updates
 
 **Cuando se necesita hacer un cambio en el stack** en lugar
 de borrar y volver a crear el stack. Puede modificar la
@@ -124,7 +124,7 @@ las circunstancias:
 1. **Realiza** el recurso durante una actualización
 2. También **genera un nuevo** ID físico
 
-## Prevenir las actualizaciones de el stack
+## Prevent Stack Updates
 
 Puede que quieras que ciertos recursos no se actualicen.
 Impedir una actualización del stack podría ser para evitar
@@ -137,7 +137,7 @@ de actualización que se pueden realizar en los recursos designados.
   src="../../public/images/cloudformation/prevent_stack_updates.png"
   alt="Prevent Stacks Updates" />
 
-## Pilas anidadas
+## Nested Stacks
 
 Los **NestedStacks** permiten referenciar plantillas CFN
 dentro de otras plantillas CFN dentro de otra:
@@ -149,26 +149,26 @@ dentro de otras plantillas CFN dentro de otra:
 - Los stacks padre tienen acceso inmediato a los stacks hijo
 - El stack raíz es accesible por todos los stacks anidados
 
-## Detección de la deriva
+## Drift Detection
 
-### ¿Qué es la deriva?
+### What is Drift?
 
 La deriva es cuando la configuración real de su stack difiere
 de lo que CloudFormation espera
 
-### ¿Por qué ocurre el Drift?
+### Why does Drift Happen?
 
 Cuando los desarrolladores comienzan a hacer cambios manuales
 en el stack ( el ejemplo más común es borrar recursos )
 En lugar de cambiar la configuración actualizando y
 relanzando la plantilla de CloudFormation
 
-### Función de CloudFormation "Detecte Drift"
+### CloudFormation "Detecte Drift" Feature
 
 CloudFormation puede detectar la deriva y decirle si los recursos
 eliminados o han sido modificados
 
-### Nest Stacks y detección de drift
+### Nest Stacks and Drift Detection
 
 Cuando se detecta la deriva en el stack,
 CloudFormation no detecta la deriva en cualquier stack
@@ -210,7 +210,7 @@ el rollback fallido
 - Cuando un rollback tiene éxito, verá **UPDATE_ROLLBACK_COMPLETE**.
 - Cuando un rollback falla verá **UPDATE_ROLLBACK_FAILED**.
 
-## Pseudo Parámetros
+## Pseudo Parameters
 
 **Parámetros predefinidos** por AWS CloudFormation.
 No los declare en su plantilla.
@@ -223,7 +223,7 @@ Outputs:
     Value: !Ref "AWS::Region"
 ```
 
-### Parámetros más comunes
+### Parameters Most Common
 
 | **Parámetro**      | **Descripción**                                                                                         | **Example**                                                                                         |
 |--------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -233,7 +233,7 @@ Outputs:
 | **AWS::StackName** | Devuelve el nombre del stack tal y como se especifica en el comando create-stack de AWS CloudFormation  | my-cfn-stack                                                                                        |
 | **AWS::URLSuffix** | Devuelve el sufijo de un dominio. El sufijo suele ser `amazonaws.com`, pero puede variar según la región| amazon.com.cn                                                                                       |
 
-## Atributos de los recursos
+## Resource Attributes
 
 ### CreationPolicy
 
@@ -301,7 +301,7 @@ Resources:
     Type: AWS::RDS::DBInstance
 ```
 
-## Funciones intrínsecas
+## Intrinsic Functions
 
 Utilice funciones intrínsecas en sus plantillas para
 **asignar valores a las propiedades que no están disponibles**
@@ -349,7 +349,7 @@ lo que está disponible por recurso
 Cuando necesites un valor para un recurso
 **y no puedas obtenerlo de** Ref **puedes obtenerlo de** Fn::GetAttr
 
-## Condiciones de espera
+## Wait Conditions
 
 Las condiciones de espera **esperan** una **condición**
 
